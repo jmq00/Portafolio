@@ -1,0 +1,84 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
+*/*{
+    border: 1px solid red;
+}*/
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+table{
+    width: 40%;
+    margin-left: 30%;
+}
+th{
+    background-color: #17202A;
+    height: 9.5vh;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    margin-left: 1vh;
+    margin-top: 1vh;
+    background-color: grey;
+    width: 45vh;
+    height: 7vh;
+    border-radius: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 0 1vh;
+    margin-left: 20%;
+    margin-bottom: 1vh;
+}
+#logo a{
+    text-decoration: none;
+    color: white;
+}
+#cuerpo{
+    height: 84vh;
+    background-color: #FEF9E7;
+}
+main{
+    display: flex;
+}
+#texto, #texto2{
+    background-color: #F0B27A;
+    width: 80%;
+    border: 1px solid #F0B27A;
+    border-radius: 5px;
+    margin: 5vh;
+    box-shadow: 10px 10px 5px grey;
+    padding: 2vh;
+}
+#texto{
+    margin-top: -30vh;
+}
+#texto2{
+    width: 40%;
+}
+#empresario{
+    position: absolute;
+    top: 25.3vh;
+    left: 100vh;
+    width: 46vh;
+}
+#spotify{
+    width: 30vh;
+    position: absolute;
+    left: 64.7vh;
+    bottom: 19vh;
+}
+#footer{
+    background-color: #17202A;
+    height: 5vh;
+}
+#redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+#redes a{
+    padding: 0 5vh;
+    color: white;
+    text-decoration: none;
+}
