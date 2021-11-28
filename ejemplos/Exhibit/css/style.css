@@ -1,0 +1,136 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#page{
+    width: 75%;
+    display: grid;
+    grid-template-columns: 18% 18% 18% 46%;
+    grid-template-rows: 10vh 4vh 18vh 14vh 14vh 14vh 15vh;
+    grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "main main main articulo1"
+    "main main main articulo2"
+    "main main main articulo3"
+    "foto1 foto2 foto3 articulo4"
+    "foto1 foto2 foto3 footer"
+    ;
+    gap: 1vh;
+    margin: 1vh;
+    margin-left: 12%;
+}
+header{
+    grid-area: header;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header img{
+    width: 12vh;
+}
+nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    height: 3vh;
+    padding: 0 5vh;
+    border-right: 1px solid black;
+}
+nav a:last-child{
+    border-right: 0;
+}
+main{
+    grid-area: main;
+}
+main img{
+    width: 81.5vh;
+    height: 48vh;
+}
+#articulo1, #articulo2, #articulo3{
+    border-bottom: 1px dotted black;
+}
+#articulo2 h2, #articulo3 h2, #articulo4 h2{
+    margin-top: -0.1vh;
+}
+#articulo2 ul, #articulo3 ul, #articulo4 ul{
+    margin-top: -1.5vh;
+}
+#articulo2 p, #articulo3 p, #articulo4 p{
+    margin-top: -1vh;
+    color: rgb(182, 0, 0);
+    font-weight: bold;
+}
+#articulo1{
+    grid-area: articulo1;
+}
+#articulo1 p{
+    text-align: justify;
+}
+#articulo2{
+    grid-area: articulo2;
+}
+#articulo3{
+    grid-area: articulo3;
+}
+#articulo4{
+    grid-area: articulo4;
+}
+#foto1, #foto2, #foto3{
+    background-color: white;
+}
+#foto1{
+    grid-area: foto1;
+    background-image: url('../img/photo-1.jpg');
+    background-repeat: no-repeat;
+    background-size: 45vh;
+    background-position: -2vh 0vh;
+}
+#foto2{
+    grid-area: foto2;
+    background-image: url('../img/photo-2.jpg');
+    background-repeat: no-repeat;
+    background-size: 45vh;
+    background-position: -2vh 0vh;
+}
+#foto3{
+    grid-area: foto3;
+    background-image: url('../img/photo-3.jpg');
+    background-repeat: no-repeat;
+    background-size: 45vh;
+    background-position: -2vh 0vh;
+}
+footer{
+    grid-area: footer;
+    background-color: black;
+}
+footer table{
+    width: 100%;
+    color: wheat;
+    text-align: center;
+    border-collapse: collapse;
+}
+footer img{
+ width: 12vh;
+}
+#tabletop{
+    height: 3vh;
+}
+#tablebottom{
+    height: 12vh;
+}
+.tablecenter{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
