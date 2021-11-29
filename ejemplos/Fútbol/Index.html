@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <body style="font-family: Arial, Helvetica, sans-serif; color: brown;"></body> 
+    <title>Document</title>
+    <style>
+        img{
+            width: 50px;
+            height: 50px;
+            padding-left: 50px;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .num{
+            width: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: relative;
+        }
+        .num::before{
+            content:"";
+            display: block;
+            width: 8px;
+            height: 50px;
+            background-color: rgb(255, 255, 145);
+            position: absolute;
+            top: 3px;
+            left: 5px;
+        }
+        h1{
+            text-align: center;
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+            margin-top: 50px;
+        }
+        th{
+            font-size: 15px;
+            border-bottom: 4px solid red;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            text-align: center;
+        }
+        .nom{
+            text-align: left;
+            padding-left: 80px;
+        }
+        tr:nth-child(even){
+             background-color: beige;
+        }
+        td{
+            text-align: center;
+        }
+        #button1{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        #button2{
+            position: absolute;
+            top: 10px;
+            right: 80px;
+        }
+        #ordenarpor{
+            position: absolute;
+            top: -5px;
+            right: 145px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="botones">
+            <div id="ordenarpor"><p>Ordenar por:</p></div>
+            <button id="button1">Nombre</button>
+            <button id="button2">Puntos</button>
+        </div>
+        <h1>TOTALES</h1>
+    </header>
+    <table>
+        <tr>
+            <th colspan="3">Equipos</th>
+            <th>PTOS</th>
+            <th>PJ</th>
+            <th>PG</th>
+            <th>PE</th>
+            <th>PP</th>
+            <th>GF</th>
+            <th>GC</th>
+        </tr>
+        <tr>
+            <td class="num">1</td>
+            <td><img src="img/real_madrid.png"></td>
+            <td class="nom">Real Madrid</td>
+            <td style="width: 10%;">84</td>
+            <td style="width: 10%;">38</td>
+            <td style="width: 10%;">25</td>
+            <td style="width: 10%;">9</td>
+            <td style="width: 10%;">4</td>
+            <td style="width: 10%;">67</td>
+            <td style="width: 10%;">28</td>
+        </tr>
+        <tr>
+            <td class="num">2</td>
+            <td><img src="img/alaves.png"></td>
+            <td class="nom">Alavés</td>
+            <td>38</td>
+            <td>38</td>
+            <td>9</td>
+            <td>11</td>
+            <td>18</td>
+            <td>36</td>
+            <td>57</td>
+        </tr>
+        <tr>
+            <td class="num">3</td>
+            <td><img src="img/athletic.png"></td>
+            <td class="nom">Athletic</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td class="num">4</td>
+            <td><img src="img/atletico.png"></td>
+            <td class="nom">Atlético</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td class="num">5</td>
+            <td><img src="img/barcelona.png"></td>
+            <td class="nom">Barcelona</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td class="num">6</td>
+            <td><img src="img/betis.png"></td>
+            <td class="nom">Betis</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td class="num">7</td>
+            <td><img src="img/celta.png"></td>
+            <td class="nom">Celta</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td class="num">8</td>
+            <td><img src="img/cadiz.png"></td>
+            <td class="nom">Cádiz</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td class="num">9</td>
+            <td><img src="img/elche.png"></td>
+            <td class="nom">Elche</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td class="num">10</td>
+            <td><img src="img/espanyol.png"></td>
+            <td class="nom">Espanyol</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td class="num">11</td>
+            <td><img src="img/getafe.png"></td>
+            <td class="nom">Getafe</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td class="num">12</td>
+            <td><img src="img/granada.png"></td>
+            <td class="nom">Granada</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td class="num">13</td>
+            <td><img src="img/levante.png"></td>
+            <td class="nom">Levante</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td class="num">14</td>
+            <td><img src="img/mallorca.png"></td>
+            <td class="nom">Mallorca</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td class="num">15</td>
+            <td><img src="img/osasuna.png"></td>
+            <td class="nom">Osasuna</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td class="num">16</td>
+            <td><img src="img/rayo.png"></td>
+            <td class="nom">Rayo</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td class="num">17</td>
+            <td><img src="img/real_sociedad.png"></td>
+            <td class="nom">Real Sociedad</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td class="num">18</td>
+            <td><img src="img/sevilla.png"></td>
+            <td class="nom">Sevilla</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td class="num">19</td>
+            <td><img src="img/valencia.png"></td>
+            <td class="nom">Valencia</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td class="num">20</td>
+            <td><img src="img/villarreal.png"></td>
+            <td class="nom">Villareal</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+    </table>
+</body>
+</html>
